@@ -44,23 +44,38 @@ const DATA = [
     price: '30.40',
     image: 'https://i.nefisyemektarifleri.com/2022/10/04/sade-et-kavurma-2.jpg',
   },
-  
+  {
+    id: '7',
+    title: 'Lahmacun',
+    price: '30.40',
+    image:
+      'https://recipesblob.droetker.com.tr/assets/34830b44669145c5a77e7db5a611b391/750x910/lahmacunla.jpg',
+  },
+  {
+    id: '8',
+    title: 'Kavurma',
+    price: '30.40',
+    image: 'https://i.nefisyemektarifleri.com/2022/10/04/sade-et-kavurma-2.jpg',
+  },
 ];
 
 const FlatList1 = () => {
   return (
-    <FlatList
-      data={DATA}
-      numColumns={2}
-      keyExtractor={item => item.id}
-      renderItem={({item}) => (
-        <FlatList0
-          photo={item.image}
-          food_name={item.title}
-          price={item.price}
-        />
-      )}
-    />
+    <View style={styles.container}>
+      <FlatList
+        disableVirtualization={true}
+        data={DATA}
+        numColumns={2}
+        keyExtractor={item => item.id}
+        renderItem={({item}) => (
+          <FlatList0
+            photo={item.image}
+            food_name={item.title}
+            price={item.price}
+          />
+        )}
+      />
+    </View>
   );
 };
 

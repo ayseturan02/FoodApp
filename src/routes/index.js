@@ -1,12 +1,12 @@
 
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import Navigation from './Navigation';
+import RootStack from './RootStack';
 
 const index = () => {
   return (
     <NavigationContainer>
-      <Navigation />
+      <RootStack/>
     </NavigationContainer>
   );
 };

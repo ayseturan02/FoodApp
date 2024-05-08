@@ -13,6 +13,9 @@ const rightArrow = require('./rightArrow.png');
 const twitter = require('./twitter.png');
 const facebook = require('./facebook.png');
 
+const star=require("./star.png")
+const star1=require("./star1.png")
+
 export {
   visible,
   cart,
@@ -27,5 +30,7 @@ export {
   person,
   rightArrow,
   twitter,
-  facebook
+  facebook,
+  star,
+  star1
 };

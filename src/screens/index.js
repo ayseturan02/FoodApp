@@ -1,5 +1,5 @@
-import work from './work/Login';
-import work1 from './work1/Menu';
-import work2 from './work2/Screen3';
+import Login1 from './login1/Login1';
+import Menu from './menu/Menu';
+import Screen3 from './screens3/Screen3';
 
-export {work, work1,work2};
+export {Login1, Menu, Screen3};

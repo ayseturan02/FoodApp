@@ -51,4 +51,7 @@ export default styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: -winWidth * 0.03,
   },
+  container: {
+    height: winHeight * 0.73,
+  },
 });
